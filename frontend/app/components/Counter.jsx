@@ -11,10 +11,18 @@ const Counter = () => {
   };
 
   return (
-    <div className="flex flex-col">
-      <h2>Point : {count}</h2>
-      <button onClick={handleClick}>
-        <Image src={catSexy} alt="cat girl sexy" width={200} height={200} />
+    <div className="flex flex-col h-full">
+      <div className="w-full text-center ">
+        <h2>Point : {count}</h2>
+      </div>
+      <button className="h-[90%] " onClick={handleClick}>
+        <Image
+          className="h-[80%] w-full object-cover "
+          src={catSexy}
+          alt="cat girl sexy"
+          width={200}
+          height={200}
+        />
         Frappe moi fort BB !
       </button>
     </div>

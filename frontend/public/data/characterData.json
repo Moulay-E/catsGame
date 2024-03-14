@@ -1,0 +1,32 @@
+{
+  "chat1": {
+    "src": "@/public/assets/character/catCrazy.jpg",
+    "alt": "un chat",
+    "cost": 10,
+    "bonus": 1
+  },
+  "chat2": {
+    "src": "@/public/assets/character/catCrazy.jpg",
+    "alt": "un chat",
+    "cost": 10,
+    "bonus": 1
+  },
+  "chat3": {
+    "src": "@/public/assets/character/catCrazy.jpg",
+    "alt": "un chat",
+    "cost": 10,
+    "bonus": 1
+  },
+  "chat4": {
+    "src": "@/public/assets/character/catCrazy.jpg",
+    "alt": "un chat",
+    "cost": 10,
+    "bonus": 1
+  },
+  "chat5": {
+    "src": "@/public/assets/character/catCrazy.jpg",
+    "alt": "un chat",
+    "cost": 10,
+    "bonus": 1
+  }
+}

@@ -1,15 +1,14 @@
-import Image from 'next/image';
 import Side from './components/Side';
 import Navbar from './components/Navbar';
-import Principale from './components/Principale';
+import Character from './components/Character';
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-around ">
+    <main className="flex flex-col min-h-screen items-center justify-between ">
       <Navbar />
-      <div className=" w-full flex justify-between">
+      <div className=" w-full flex flex-col md:flex-row justify-between">
         <Side />
-        <Principale />
+        <Character />
       </div>
     </main>
   );
