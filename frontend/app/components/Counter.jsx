@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { useState } from 'react';
-import catSexy from '@/public/assets/character/sexyCat2.jpg';
+import catSexy from '@/public/assets/character/chatDeNuit.webp';
 import Image from 'next/image';
 
 const Counter = () => {
@@ -23,7 +23,7 @@ const Counter = () => {
           width={200}
           height={200}
         />
-        Frappe moi fort BB !
+        Frappe moi pour gagner de point bg supreme !
       </button>
     </div>
   );

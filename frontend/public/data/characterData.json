@@ -1,32 +1,52 @@
 {
-  "chat1": {
-    "src": "@/public/assets/character/catCrazy.jpg",
-    "alt": "un chat",
-    "cost": 10,
-    "bonus": 1
-  },
-  "chat2": {
-    "src": "@/public/assets/character/catCrazy.jpg",
-    "alt": "un chat",
-    "cost": 10,
-    "bonus": 1
-  },
-  "chat3": {
-    "src": "@/public/assets/character/catCrazy.jpg",
-    "alt": "un chat",
-    "cost": 10,
-    "bonus": 1
-  },
-  "chat4": {
-    "src": "@/public/assets/character/catCrazy.jpg",
-    "alt": "un chat",
-    "cost": 10,
-    "bonus": 1
-  },
-  "chat5": {
-    "src": "@/public/assets/character/catCrazy.jpg",
-    "alt": "un chat",
-    "cost": 10,
-    "bonus": 1
-  }
+  "personnages": [
+    {
+      "id": "1",
+      "name": "chat1",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 10,
+      "bonus": 1
+    },
+    {
+      "id": "2",
+      "name": "chat2",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 11,
+      "bonus": 1
+    },
+    {
+      "id": "3",
+      "name": "chat3",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 12,
+      "bonus": 1
+    },
+    {
+      "id": "4",
+      "name": "chat4",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 13,
+      "bonus": 1
+    },
+    {
+      "id": "5",
+      "name": "chat5",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 14,
+      "bonus": 1
+    },
+    {
+      "id": "6",
+      "name": "chat6",
+      "src": "/assets/character/catCrazyJoy.jpg",
+      "alt": "un chat",
+      "cost": 15,
+      "bonus": 1
+    }
+  ]
 }
