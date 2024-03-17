@@ -1,6 +1,6 @@
 import Side from './components/Side';
 import Navbar from './components/Navbar';
-import Character from './components/Character';
+import Character from './components/Character/Character';
 
 export default function Home() {
   return (

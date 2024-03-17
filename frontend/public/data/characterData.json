@@ -14,7 +14,7 @@
       "src": "/assets/character/catCrazyJoy.jpg",
       "alt": "un chat",
       "cost": 11,
-      "bonus": 1
+      "bonus": 2
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "src": "/assets/character/catCrazyJoy.jpg",
       "alt": "un chat",
       "cost": 12,
-      "bonus": 1
+      "bonus": 3
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "src": "/assets/character/catCrazyJoy.jpg",
       "alt": "un chat",
       "cost": 13,
-      "bonus": 1
+      "bonus": 4
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "src": "/assets/character/catCrazyJoy.jpg",
       "alt": "un chat",
       "cost": 14,
-      "bonus": 1
+      "bonus": 5
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "src": "/assets/character/catCrazyJoy.jpg",
       "alt": "un chat",
       "cost": 15,
-      "bonus": 1
+      "bonus": 6
     }
   ]
 }
