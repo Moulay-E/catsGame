@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useContext, useEffect, useState } from 'react';
 import { GlobalDataContext } from '../../context';
-import CounterCharater from './CounterCharater';
+import CounterCharacter from './CounterCharater';
 
 function CharacterMap({ data }) {
   const { score, setScore } = useContext(GlobalDataContext);
@@ -26,11 +26,11 @@ function CharacterMap({ data }) {
               width={48}
               height={48}
             />
-            <CounterCharater
+            <CounterCharacter
               bonusId={personnage.id}
               bonusCost={personnage.cost}
               bonus={personnage.bonus}
-            ></CounterCharater>
+            ></CounterCharacter>
             <p>{personnage.cost}</p>
           </div>
         ))}

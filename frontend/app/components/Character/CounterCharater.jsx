@@ -2,25 +2,17 @@
 import { GlobalDataContext } from '@/app/context';
 import React, { useState, useEffect, useContext } from 'react';
 
-const CounterCharater = ({ bonusId, bonusCost, bonus }) => {
-  //   const [characterBonus, setCharacterBonus] = useState([]);
-  //   const mappedData = data.personnages.map(({ id, cost, bonus }) => ({
-  //     id,
-  //     cost,
-  //     bonus,
-  //   }));
-  //   setCharacterBonus(mappedData);
-
+const CounterCharacter = ({ bonusId, bonusCost, bonus }) => {
   const { score, setScore } = useContext(GlobalDataContext);
   const [bonusActif, setBonusActif] = useState({});
 
-  const buyBonus = (bonusId, bonusCost, bonus) => {
+  const buyBonus = () => {
     if (score >= bonusCost) {
-      setScore(score - bonusCost);
-      console.log(bonusId, bonusCost);
+      console.log(bonusId, bonusCost, bonus, 'list');
+      setScore((prevScore) => prevScore - bonusCost);
 
       setBonusActif({ ...bonusActif, [bonusId]: bonus });
-      console.log(bonusActif);
+      console.log(bonusActif, 'ghell');
     } else {
       alert("Vous n'avez pas suffisament d'argent");
     }
@@ -42,13 +34,16 @@ const CounterCharater = ({ bonusId, bonusCost, bonus }) => {
       //     setScore(score + bonusValue);
       //   }
       Object.keys(bonusActif).forEach((bonusId) => {
-        setScore(score + bonus);
+        // setScore(score + bonus);
+        console.log(bonusId);
+        console.log(bonusActif, 'bonus tabl');
+        setScore((prevScore) => prevScore + bonusActif[bonusId]);
       });
     }, 1000);
     return () => clearInterval(timer);
   }, [bonusActif, setScore]);
 
-  return <button onClick={() => buyBonus(bonusId, bonusCost)}> YYY</button>;
+  return <button onClick={() => buyBonus()}> YYY</button>;
 };
 
-export default CounterCharater;
+export default CounterCharacter;
