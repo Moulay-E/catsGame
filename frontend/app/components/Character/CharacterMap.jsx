@@ -30,6 +30,7 @@ function CharacterMap({ data }) {
               bonusId={personnage.id}
               bonusCost={personnage.cost}
               bonus={personnage.bonus}
+              bonusCount={personnage.count}
             ></CounterCharacter>
             <p>{personnage.cost}</p>
           </div>

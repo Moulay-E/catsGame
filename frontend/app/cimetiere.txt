@@ -1,0 +1,53 @@
+  const getBonusValue = (bonusId) => {
+    if (bonusActif[bonusId] !== undefined) {
+      return bonusActif[bonusId];
+    } else {
+      console.error(`Bonus introuvable : ${bonusId}`);
+      return 0; // Valeur par défaut si le bonus n'est pas trouvé
+    }
+  };
+
+
+  code bug duplication  : 
+        // setBonusActif((prevState) => {
+      //   const bonusIndex = prevState.findIndex(
+      //     (item) => item.bonusId === bonusId,
+      //   );
+      //   if (bonusIndex > -1) {
+      //     console.log(bonusIndex, 'index');
+      //     // Copiez l'état, mettez à jour le compteur de l'élément trouvé, et retournez le nouvel état
+      //     const newState = [...prevState];
+      //     newState[bonusIndex] = {
+      //       ...newState[bonusIndex],
+      //       count: newState[bonusIndex].count + 1,
+      //     };
+      //     return newState;
+      //   } else {
+      //     // Ajoutez un nouvel élément s'il n'existe pas
+      //     return [...prevState, { bonusId, value: bonus, count: 1 }];
+      //   }
+      // });
+
+      old :
+        // useEffect(() => {
+  //   // console.log(bonusActif, 'all');
+  //   const timer = setInterval(() => {
+  //     bonusActif.forEach((obj) => {
+  //       setScore((prevScore) => prevScore + obj.value * obj.count);
+  //     });
+  //   }, 1000);
+  //   return () => clearInterval(timer);
+  // }, [score]);
+
+  // useEffect(() => {
+  //   bonusActif.forEach((obj) => {
+  //     console.log(
+  //       `Bonus ID: ${bonusId}, Valeur: ${obj.value}`,
+  //       'bonusActif après mise à jour',
+  //       'count',
+  //       obj.count,
+  //     );
+  //   });
+  // }, [bonusActif, score]);
+
+      
